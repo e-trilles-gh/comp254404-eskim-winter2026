@@ -67,13 +67,18 @@ public class SinglyLinkedList<E> {
     }
 
     public void swapFirstAndSecondNodes() {
+        //create three nodes
         Node<E> firstNode = head;
         Node<E> secondNode = firstNode.getNext();
         Node<E> thirdNode = secondNode.getNext();
 
+        //verify if two nodes both contain the same item
         if (!firstNode.getElement().equals(secondNode.getElement())) {
+            //moving the first node as second node
             firstNode.setNext(thirdNode);
+            //moving the second node as first node
             secondNode.setNext(firstNode);
+            //making the second node as the head node
             head = secondNode;
 
             System.out.println("First and second nodes of singlyLinkedList swapped.");

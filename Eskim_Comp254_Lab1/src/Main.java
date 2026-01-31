@@ -78,7 +78,7 @@ public class Main {
         //======================= End of Exercise 2 driver ========================
 */
 
-/*
+
         //============================= Exercise 3 ================================
 
         CircularlyLinkedList<Integer> circularlyLinkedList1 = new CircularlyLinkedList<>();
@@ -113,6 +113,6 @@ public class Main {
         System.out.println("This is the last element of circularlylinkedlist A: " + circularlyLinkedList1.last());
         System.out.println("Node count of circularlylinkedlist A: " + circularlyLinkedList1.size());
 
- */
+
     }
 }

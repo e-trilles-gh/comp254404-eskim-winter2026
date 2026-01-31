@@ -97,37 +97,54 @@ public class DoublyLinkedList<E> {
     }
 
     public void addLastList(DoublyLinkedList secondLinkList) {
+        //identify the affected nodes of each list: two ends of second list and last node of the first link
         Node firstNodeOfSecondLinkList = secondLinkList.header.getNext();
 
         Node lastNodeOfSecondLinkList = secondLinkList.trailer.getPrev();
 
         Node lastNodeOfFirstLinkList = trailer.getPrev();
 
+        //links the first node of the second linkedlist to the last node of the first linkedlist
         firstNodeOfSecondLinkList.setPrev(lastNodeOfFirstLinkList);
+        //links the last node of the second linkedlist to the trailer
         lastNodeOfSecondLinkList.setNext(trailer);
 
+        //links the last node of the first linkedlist to the first node of the second linkedlist
         lastNodeOfFirstLinkList.setNext(firstNodeOfSecondLinkList);
+        //links the trailer to the last node of the second linkedlist
         trailer.setPrev(lastNodeOfSecondLinkList);
 
+        //updates the total number of nodes for the new joined linkedlist
         size = size + secondLinkList.size();
 
-        secondLinkList.size = secondLinkList.size- secondLinkList.size;
+        //updates the total number of nodes for the second linkedlist(only head and trailer left)
+        secondLinkList.size = secondLinkList.size - secondLinkList.size;
 
+        //head and trailer nodes remain for the second linkedlist
         secondLinkList.trailer.setPrev(secondLinkList.header);
         secondLinkList.header.setNext(secondLinkList.trailer);
     }
 
     public void swapFirstAndSecondNodes() {
+        //creates node references for the affected nodes
         Node firstNode = header.getNext();
         Node secondNode = firstNode.getNext();
         Node thirdNode = secondNode.getNext();
+
+        //checks if the two nodes' elements are the same
         if (!firstNode.getElement().equals(secondNode.getElement())) {
+            //links the second node with the head,making the second node as the first node
             header.setNext(secondNode);
+            //links the first node to the third node, making the first node as the second node
             firstNode.setNext(thirdNode);
+            //links the first node from the second node, completing the link (2nd-1st-3rd)
             firstNode.setPrev(secondNode);
+            //links the second node to the first node, making the second node as the first node
             secondNode.setNext(firstNode);
+            //links the second node from the head, completing the link (head-2nd-1st)
             secondNode.setPrev(header);
-            thirdNode.setPrev(secondNode);
+            //links the first node to the third node, completing the link (2nd-1st-3rd)
+            thirdNode.setPrev(firstNode);
             System.out.println("First and second nodes of link list swapped.");
         } else {
             System.out.println("Both nodes contain the same element. Swap cancelled.");
