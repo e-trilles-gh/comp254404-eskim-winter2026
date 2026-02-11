@@ -76,4 +76,21 @@ public class Exercise1 {
     use the n, it is indirectly using the n through the loop next to it which
     is using the loop directly.
      */
+
+    public static void startExamples(int[] numbers1, int[] numbers2) {
+        int example1 = example1(numbers1);
+        System.out.println("example 1: " + example1);
+
+        int example2 = example2(numbers1);
+        System.out.println("\nexample 2: " + example2);
+
+        int example3 = example3(numbers1);
+        System.out.println("\nexample 3: " + example3);
+
+        int example4 = example4(numbers1);
+        System.out.println("\nexample 4: " + example4);
+
+        int example5 = example5(numbers1, numbers2);
+        System.out.println("\nexample 5: " + example5);
+    }
 }
