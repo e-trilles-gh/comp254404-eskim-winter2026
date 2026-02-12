@@ -78,6 +78,9 @@ public class Exercise1 {
      */
 
     public static void startExamples(int[] numbers1, int[] numbers2) {
+
+        //this will call the methods above, passing the same set of arrays as parameter
+        //and prints the corresponding method names for identification
         int example1 = example1(numbers1);
         System.out.println("example 1: " + example1);
 

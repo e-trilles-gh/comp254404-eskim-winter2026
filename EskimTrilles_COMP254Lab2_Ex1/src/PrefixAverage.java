@@ -35,6 +35,8 @@ public class PrefixAverage {
         long prefix1ElapsedTime;
         long prefix2ElapsedTime;
 
+        //this will create a list that contains double items
+        //that will be used by the methods
         for (int i = 0; i < repeat; i++){
             num += i + 0.0;
             for (int j = 0; j < 10; j++) {
@@ -50,9 +52,16 @@ public class PrefixAverage {
         }
 
 
+        //records the time before running the method
         startTime = System.currentTimeMillis();
         double[] average1 = prefixAverage1(doubleNumbers);
+
+        //records the time after running the method
         endTime = System.currentTimeMillis();
+
+        //calculates the difference between the start and
+        //end time to get the time the method took
+        //while running
         prefix1ElapsedTime = endTime - startTime;
 
 
@@ -61,6 +70,8 @@ public class PrefixAverage {
         endTime = System.currentTimeMillis();
         prefix2ElapsedTime = endTime - startTime;
 
+        //this will show the results of both methods
+        //in a table format
         System.out.printf("%-15s %-15s%s", repeat, prefix1ElapsedTime, prefix2ElapsedTime + "\n");
     }
 }
