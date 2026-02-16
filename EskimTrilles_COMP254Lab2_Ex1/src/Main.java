@@ -4,7 +4,7 @@ import java.util.ArrayList;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-
+/*
         //Exercise 1
         System.out.println("Exercise 1: BigO notation\n");
 
@@ -29,10 +29,10 @@ public class Main {
 
         //Exercise 3
         System.out.println("\nExercise 3: Experimental analysis\n");
+*/
 
+        Uniqueness.binarySearch(13, 17, 900000000, "unique1");
 
-        Uniqueness.binarySearch(13, 17, 1000000, "unique1");
-
-        Uniqueness.binarySearch(13, 17, 10000000, "unique2");
+//        Uniqueness.binarySearch(13, 17, 10000000, "unique2");
     }
 }

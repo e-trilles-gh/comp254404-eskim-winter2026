@@ -36,7 +36,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/EsKim/Documents/CentennialCollege/Winter2026/COMP254-DataStrucutureAndAlgorithms/Practice/comp254404-eskim-winter2026/comp254404-eskim-winter2026/EskimTrilles_COMP254Lab2_Ex1/src/Main.java",
+    "onboarding.tips.debug.path": "C:/Users/EsKim/Documents/CentennialCollege/Winter2026/COMP254-DataStrucutureAndAlgorithms/Practice/comp254404-eskim-winter2026/comp254404-eskim-winter2026/EskimTrilles_COMP254Lab3_Ex1/src/Main.java",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -57,5 +57,15 @@
       <updated>1769120219087</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

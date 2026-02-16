@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EskimTrilles_COMP254Lab2_Ex1/EskimTrilles_COMP254Lab2_Ex1.iml" filepath="$PROJECT_DIR$/EskimTrilles_COMP254Lab2_Ex1/EskimTrilles_COMP254Lab2_Ex1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EskimTrilles_COMP254Lab3_Ex1/EskimTrilles_COMP254Lab3_Ex1.iml" filepath="$PROJECT_DIR$/EskimTrilles_COMP254Lab3_Ex1/EskimTrilles_COMP254Lab3_Ex1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Eskim_Comp254_Lab1/Eskim_Comp254_Lab1.iml" filepath="$PROJECT_DIR$/Eskim_Comp254_Lab1/Eskim_Comp254_Lab1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/comp254404-eskim-winter2026.iml" filepath="$PROJECT_DIR$/.idea/comp254404-eskim-winter2026.iml" />
     </modules>
