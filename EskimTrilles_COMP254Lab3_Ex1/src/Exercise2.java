@@ -31,6 +31,7 @@ public class Exercise2 {
         }
     }
 
+    //method to check if the reversed word and the word itself are the same
     public static void checkWord(String word) {
         //stores the number of character of the word
         int charCount = word.length();
@@ -43,6 +44,7 @@ public class Exercise2 {
         }
     }
 
+    //recursion method
     public static String reverseWord(String word, int charIndex) {
         String newWord = "";
 
@@ -57,14 +59,15 @@ public class Exercise2 {
                 charList.add(c);
             }
 
-            //creates the new word starting from the
-            // last letter of the word being tested
+            //accesses the every character starting from the
+            //last letter of the word being tested and
+            //store it into the variable newWord
             newWord += charList.get(charIndex - 1);
 
             //calls the same method as recursion until the new word is created.
             //every recursion will access every character of the word starting
-            //from the last index 1 up to the first character.
-            //previous method accessed
+            //from the last index (-1) up to the first character, then
+            // recursion ends.
             return newWord + reverseWord(word, charIndex - 1);
         }
     }

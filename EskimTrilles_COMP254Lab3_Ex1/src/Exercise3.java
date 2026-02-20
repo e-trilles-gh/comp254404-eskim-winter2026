@@ -11,17 +11,19 @@ public class Exercise3 {
         //checks if the path is a directory
         if (path.isDirectory()) {
 
-            //pathList variable stores the list of every item in a path/directory
+            //pathList variable of type File stores the list of
+            //every item in a path/directory
             File[] pathList = path.listFiles();
 
-            //loops throughout the list of Files for every path
+            //loops throughout the list of Files inside every path/directory
             for (File subPath : pathList) {
 
-                //accesses the individual file from the list as argument to call
-                //the method recursively and storing the return value a variable
+                //accesses the individual file from the pathList and use it as
+                //one of the arguments to call the method recursively
+                //and storing the return value in a variable fileFound(boolean)
                 fileFound = find(subPath, filename);
 
-                //triggers an exit to the recursion if the method found
+                //triggers an exit from the recursion if the method found
                 //the correct file
                 if (fileFound) {
                     return fileFound;
@@ -36,7 +38,7 @@ public class Exercise3 {
             if (path.getName().equals(filename)) {
 
                 //creates a list to store all the subfolders and files
-                //of within the directory where the file is located
+                //within the directory where the file is located, if there's any
                 File[] dirList = path.getParentFile().listFiles();
 
                 System.out.println("Folders and Files with " + filename);
@@ -59,7 +61,7 @@ public class Exercise3 {
                 fileFound = true;
             }
 
-            //cheks if the path is null or not existing
+            //checks if the path is null or not existing
         } else if(path == null) {
             System.out.println("File or Folder does not exist.");
         }else {

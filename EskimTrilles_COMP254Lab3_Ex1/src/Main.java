@@ -1,11 +1,12 @@
+import java.awt.*;
 import java.io.File;
 
 public class Main {
     public static void main(String[] args) {
         //--------------- Exercise 1 -------------------
 
-//        System.out.println("Exercise 1 - Multiplication of two positive integers using recursion.\n");
-//        System.out.println(Exercise1.multiplication(6, 5));
+        System.out.println("Exercise 1 - Multiplication of two positive integers using recursion.\n");
+        System.out.println("6 x 5 = " + Exercise1.multiplication(6, 5));
 
 
 
@@ -26,8 +27,6 @@ public class Main {
 
 
 
-
-
         //--------------- Exercise 3 -------------------
 
         System.out.println("\n\nExercise 3 - Searching a file from a file system.\n");
@@ -40,7 +39,8 @@ public class Main {
         fileFound = Exercise3.find(path, filename);
         if (fileFound) {
             System.out.println("Search successful");
+        } else {
+            System.out.println("File not found.");
         }
-
     }
 }
