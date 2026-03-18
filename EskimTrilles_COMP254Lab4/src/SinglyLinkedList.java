@@ -233,20 +233,23 @@ public class SinglyLinkedList<E> implements Cloneable {
 
     // Exercise 3 - method concatenate(LinkedQueue<E> Q2)
     public void concatenate(SinglyLinkedList<E> list2) {
+
         // last node of the 1st list
-        Node<E> lastNode = tail.getNext();
+        System.out.println(this.tail.getNext());
+        Node<E> lastNode = this.tail;
 
         // two ends of the 2nd list - the first and last node
         Node<E> list2FirstNode = list2.head;
-        Node<E> list2LastNode = list2.tail.getNext();
-
+        Node<E> list2LastNode = list2.tail;
 
         // appends the 2nd list to the last node of first list
         lastNode.setNext(list2FirstNode);
 
         // points the tail to the last node of 2nd list
-        tail.setNext(list2LastNode);
+        this.tail.setNext(list2LastNode);
 
+        // update node count
+        this.size += list2.size();
 
         // sets the head and tail of the 2nd list to null
         list2.head = null;

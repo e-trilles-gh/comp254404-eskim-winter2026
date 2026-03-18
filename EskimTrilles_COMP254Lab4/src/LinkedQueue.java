@@ -89,6 +89,7 @@ public class LinkedQueue<E> implements Queue<E> {
     // question 3
 
     public void concatenate(LinkedQueue<E> Q2) {
+        System.out.println(this.list.first());
         this.list.concatenate(Q2.list);
     }
 }

@@ -124,12 +124,18 @@ public class LinkedPositionalList<E> implements PositionalList<E> {
     // Exercise 1 - method indexOf(p)
 
     public int indexOf(Position<E> p) {
+        // starts the counting from index 0
         int index = 0;
+
+        // captures the size of the positionallinkedlist
         int size = size();
 
+        // captures the first position of the positionallinkedlist
         Position<E> walk = first();
 
+        // loops throughout the positionallinkedlist
         for (int i = index; i < size; i++) {
+            // compares the two positions
             if (p == walk) {
                 index = i;
                 break;
