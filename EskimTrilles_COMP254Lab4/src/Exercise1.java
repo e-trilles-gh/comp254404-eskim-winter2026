@@ -37,7 +37,6 @@ public class Exercise1 {
     Position<String> p7 = positionalList.addFirst("Lemon");
     Position<String> p8 = positionalList.addFirst("Mango");
 
-
     public void identifyPosition(){
         int indexPosition;
         System.out.println("Exercise 1");
@@ -46,6 +45,4 @@ public class Exercise1 {
 
         System.out.println("The index of position p4 is: " + indexPosition + "\n");
     }
-
-
 }

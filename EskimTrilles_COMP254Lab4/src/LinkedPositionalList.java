@@ -121,6 +121,8 @@ public class LinkedPositionalList<E> implements PositionalList<E> {
 
 
 
+
+
     // Exercise 1 - method indexOf(p)
 
     public int indexOf(Position<E> p) {

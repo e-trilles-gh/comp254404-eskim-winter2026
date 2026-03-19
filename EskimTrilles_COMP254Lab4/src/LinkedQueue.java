@@ -86,6 +86,8 @@ public class LinkedQueue<E> implements Queue<E> {
 
 
 
+
+
     // question 3
 
     public void concatenate(LinkedQueue<E> Q2) {

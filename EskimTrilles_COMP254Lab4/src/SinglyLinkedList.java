@@ -255,19 +255,5 @@ public class SinglyLinkedList<E> implements Cloneable {
         list2.head = null;
         list2.tail = null;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
