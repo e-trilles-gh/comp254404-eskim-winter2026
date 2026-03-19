@@ -327,7 +327,7 @@
       <tags>View</tags>
       <tags>categoryTag:General</tags>
     </sharedElements>
-    <sharedElements xsi:type="basic:Part" xmi:id="_f3L6APfdEfCur5121Vr-BA" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Task List" iconURI="platform:/plugin/org.eclipse.mylyn.tasks.ui/icons/eview16/task-list.svg" tooltip="" closeable="true">
+    <sharedElements xsi:type="basic:Part" xmi:id="_f3L6APfdEfCur5121Vr-BA" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Task Exercise2.List" iconURI="platform:/plugin/org.eclipse.mylyn.tasks.ui/icons/eview16/task-list.svg" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.mylyn.internal.tasks.ui.views.TaskListView"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.mylyn.tasks.ui"/>
       <tags>View</tags>
@@ -1370,7 +1370,7 @@
     <tags>View</tags>
     <tags>categoryTag:Mylyn</tags>
   </descriptors>
-  <descriptors xmi:id="_fpA7I_fdEfCur5121Vr-BA" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List" iconURI="platform:/plugin/org.eclipse.mylyn.tasks.ui/icons/eview16/task-list.svg" tooltip="" allowMultiple="true" category="Mylyn" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+  <descriptors xmi:id="_fpA7I_fdEfCur5121Vr-BA" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task Exercise2.List" iconURI="platform:/plugin/org.eclipse.mylyn.tasks.ui/icons/eview16/task-list.svg" tooltip="" allowMultiple="true" category="Mylyn" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <persistedState key="originalCompatibilityViewClass" value="org.eclipse.mylyn.internal.tasks.ui.views.TaskListView"/>
     <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.mylyn.tasks.ui"/>
     <tags>View</tags>
@@ -1876,7 +1876,7 @@
   <commands xmi:id="_fX3g8_fdEfCur5121Vr-BA" elementId="org.eclipse.wst.xml.ui.previousSibling" commandName="Previous Sibling" description="Go to Previous Sibling" category="_fXzPU_fdEfCur5121Vr-BA"/>
   <commands xmi:id="_fX3g9PfdEfCur5121Vr-BA" elementId="org.eclipse.egit.ui.RepositoriesViewConfigurePush" commandName="Configure Push..." category="_fXz2Z_fdEfCur5121Vr-BA"/>
   <commands xmi:id="_fX3g9ffdEfCur5121Vr-BA" elementId="org.eclipse.ui.edit.findIncrementalReverse" commandName="Incremental Find Reverse" description="Incremental find reverse" category="_fXzPU_fdEfCur5121Vr-BA"/>
-  <commands xmi:id="_fX3g9vfdEfCur5121Vr-BA" elementId="org.eclipse.epp.mpc.ui.command.importFavoritesWizard" commandName="Import Marketplace Favorites" description="Import another user's Marketplace Favorites List" category="_fXz2c_fdEfCur5121Vr-BA">
+  <commands xmi:id="_fX3g9vfdEfCur5121Vr-BA" elementId="org.eclipse.epp.mpc.ui.command.importFavoritesWizard" commandName="Import Marketplace Favorites" description="Import another user's Marketplace Favorites Exercise2.List" category="_fXz2c_fdEfCur5121Vr-BA">
     <parameters xmi:id="_fX3g9_fdEfCur5121Vr-BA" elementId="favoritesUrl" name="favoritesUrl"/>
   </commands>
   <commands xmi:id="_fX3g-PfdEfCur5121Vr-BA" elementId="org.eclipse.ant.ui.antShortcut.run" commandName="Run Ant Build" description="Run Ant Build" category="_fXz2ZPfdEfCur5121Vr-BA"/>
@@ -1915,7 +1915,7 @@
   <commands xmi:id="_fX3hGPfdEfCur5121Vr-BA" elementId="org.eclipse.ltk.ui.refactor.show.refactoring.history" commandName="Open Refactoring History " description="Opens the refactoring history" category="_fXzPZ_fdEfCur5121Vr-BA"/>
   <commands xmi:id="_fX3hGffdEfCur5121Vr-BA" elementId="org.eclipse.jdt.ui.edit.text.java.search.read.access.in.hierarchy" commandName="Read Access in Hierarchy" description="Search for read references of the selected element in its hierarchy" category="_fXz2Y_fdEfCur5121Vr-BA"/>
   <commands xmi:id="_fX3hGvfdEfCur5121Vr-BA" elementId="org.eclipse.jdt.ui.edit.text.java.correction.assist.proposals" commandName="Quick Fix" description="Suggest possible fixes for a problem" category="_fXzPU_fdEfCur5121Vr-BA"/>
-  <commands xmi:id="_fX3hG_fdEfCur5121Vr-BA" elementId="org.eclipse.ui.views.log.jdt.showinconsole" commandName="&amp;Show In Console" description="Show Stack Trace in Console View" category="_fXz2c_fdEfCur5121Vr-BA"/>
+  <commands xmi:id="_fX3hG_fdEfCur5121Vr-BA" elementId="org.eclipse.ui.views.log.jdt.showinconsole" commandName="&amp;Show In Console" description="Show Exercise2.Stack Trace in Console View" category="_fXz2c_fdEfCur5121Vr-BA"/>
   <commands xmi:id="_fX4H0PfdEfCur5121Vr-BA" elementId="org.eclipse.ui.window.nextPerspective" commandName="Next Perspective" description="Switch to the next perspective" category="_fXzPZffdEfCur5121Vr-BA"/>
   <commands xmi:id="_fX4H0ffdEfCur5121Vr-BA" elementId="org.eclipse.jdt.ui.edit.text.java.push.down" commandName="Push Down" description="Move members to subclasses" category="_fXzPZ_fdEfCur5121Vr-BA"/>
   <commands xmi:id="_fX4H0vfdEfCur5121Vr-BA" elementId="org.eclipse.mylyn.tasks.ui.command.UpdateRepositoryConfiguration" commandName="Update Repository Configuration" category="_fXz2c_fdEfCur5121Vr-BA"/>
@@ -2750,7 +2750,7 @@
   <commands xmi:id="_foZQEvfdEfCur5121Vr-BA" elementId="AUTOGEN:::org.eclipse.jdt.debug.ui.LaunchViewActions/org.eclipse.jdt.debug.ui.launchViewActions.ShowSystemThreads" commandName="Show System Threads" description="Show System Threads" category="_fXz2c_fdEfCur5121Vr-BA"/>
   <commands xmi:id="_foZQE_fdEfCur5121Vr-BA" elementId="AUTOGEN:::org.eclipse.jdt.debug.ui.LaunchViewActions/org.eclipse.jdt.debug.ui.launchViewActions.ShowRunningThreads" commandName="Show Running Threads" description="Show Running Threads" category="_fXz2c_fdEfCur5121Vr-BA"/>
   <commands xmi:id="_foZQFPfdEfCur5121Vr-BA" elementId="AUTOGEN:::org.eclipse.jdt.debug.ui.LaunchViewActions/org.eclipse.jdt.debug.ui.launchViewActions.ShowMonitorThreadInfo" commandName="Show Monitors" description="Show the Thread &amp; Monitor Information" category="_fXz2c_fdEfCur5121Vr-BA"/>
-  <commands xmi:id="_foZQFffdEfCur5121Vr-BA" elementId="AUTOGEN:::org.eclipse.jdt.debug.ui.LaunchViewActions/org.eclipse.jdt.debug.ui.launchViewActions.CollapseStackFrames" commandName="Collapse Stack Frames" description="Hide less relevant stack frames" category="_fXz2c_fdEfCur5121Vr-BA"/>
+  <commands xmi:id="_foZQFffdEfCur5121Vr-BA" elementId="AUTOGEN:::org.eclipse.jdt.debug.ui.LaunchViewActions/org.eclipse.jdt.debug.ui.launchViewActions.CollapseStackFrames" commandName="Collapse Exercise2.Stack Frames" description="Hide less relevant stack frames" category="_fXz2c_fdEfCur5121Vr-BA"/>
   <commands xmi:id="_foZQFvfdEfCur5121Vr-BA" elementId="AUTOGEN:::org.eclipse.jdt.debug.ui.DisplayViewActions/org.eclipse.jdt.debug.ui.displayViewToolbar.Watch" commandName="Watch" description="Create a Watch Expression from the Selected Text" category="_fXz2c_fdEfCur5121Vr-BA"/>
   <commands xmi:id="_foZQF_fdEfCur5121Vr-BA" elementId="AUTOGEN:::org.eclipse.jdt.debug.ui.DisplayViewActions/org.eclipse.jdt.debug.ui.displayViewToolbar.Execute" commandName="Execute" description="Execute the Selected Text" category="_fXz2c_fdEfCur5121Vr-BA"/>
   <commands xmi:id="_foZQGPfdEfCur5121Vr-BA" elementId="AUTOGEN:::org.eclipse.jdt.debug.ui.DisplayViewActions/org.eclipse.jdt.debug.ui.displayViewToolbar.Display" commandName="Display" description="Display Result of Evaluating Selected Text" category="_fXz2c_fdEfCur5121Vr-BA"/>
@@ -2761,7 +2761,7 @@
   <commands xmi:id="_foaeMPfdEfCur5121Vr-BA" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.tasks.ui.open.repositories.view" commandName="Show Task Repositories View" description="Show Task Repositories View" category="_fXz2c_fdEfCur5121Vr-BA"/>
   <commands xmi:id="_foaeMffdEfCur5121Vr-BA" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.doc.legend.show.action" commandName="Show UI Legend" description="Show Tasks UI Legend" category="_fXz2c_fdEfCur5121Vr-BA"/>
   <commands xmi:id="_foaeMvfdEfCur5121Vr-BA" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.context.ui.actions.tasklist.focus" commandName="Focus on Workweek" description="Focus on Workweek" category="_fXz2c_fdEfCur5121Vr-BA"/>
-  <commands xmi:id="_foaeM_fdEfCur5121Vr-BA" elementId="AUTOGEN:::org.eclipse.pde.ui.logViewActions/org.eclipse.jdt.debug.ui.LogViewActions.showStackTrace" commandName="Show Stack Trace in Console View" description="Show Stack Trace in Console View" category="_fXz2c_fdEfCur5121Vr-BA"/>
+  <commands xmi:id="_foaeM_fdEfCur5121Vr-BA" elementId="AUTOGEN:::org.eclipse.pde.ui.logViewActions/org.eclipse.jdt.debug.ui.LogViewActions.showStackTrace" commandName="Show Exercise2.Stack Trace in Console View" description="Show Exercise2.Stack Trace in Console View" category="_fXz2c_fdEfCur5121Vr-BA"/>
   <addons xmi:id="_fXV8X_fdEfCur5121Vr-BA" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_fXV8YPfdEfCur5121Vr-BA" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_fXV8YffdEfCur5121Vr-BA" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
