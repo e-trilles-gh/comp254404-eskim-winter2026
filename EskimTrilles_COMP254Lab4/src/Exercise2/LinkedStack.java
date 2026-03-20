@@ -45,7 +45,7 @@ import Exercise3.SinglyLinkedList;
 public class LinkedStack<E> implements Stack<E> {
 
     /** The primary storage for elements of the stack */
-    private SinglyLinkedList<E> list = new SinglyLinkedList<>();   // an empty list
+    private SinglyLinkedList<E> list = new SinglyLinkedList<E>();   // an empty list
 
     /** Constructs an initially empty stack. */
     public LinkedStack() { }                   // new stack relies on the initially empty list
@@ -101,6 +101,12 @@ public class LinkedStack<E> implements Stack<E> {
 
     // Question 2 - implement transfer(S T)
     public void transfer(LinkedStack<E> S, LinkedStack<E> T) {
+        // checks if the stack S is empty
+        if (S.isEmpty()) {
+            System.out.println("Stack " + S + " is empty.");
+            return;
+        }
+
         // captures the size of the S stack
         // that will be used for looping
         int size = S.size();

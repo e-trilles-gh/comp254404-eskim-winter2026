@@ -2,7 +2,8 @@ package Exercise2;
 
 public class Exercise2 {
 
-// Exercise 2 - This method can be found and implemented inside the Exercise2.LinkedStack.java class
+// Exercise 2 - This method can be found and implemented
+// inside the Exercise2.LinkedStack.java class
 
 //    public void transfer(Exercise2.LinkedStack<E> S, Exercise2.LinkedStack<E> T) {
 //        // captures the size of the S stack
@@ -20,8 +21,8 @@ public class Exercise2 {
 //        }
 //    }
 
-    LinkedStack<Double> linkedStackS = new LinkedStack<>();
-    LinkedStack<Double> linkedStackT = new LinkedStack<>();
+    LinkedStack<Double> linkedStackS = new LinkedStack<Double>();
+    LinkedStack<Double> linkedStackT = new LinkedStack<Double>();
 
     private void pushStack() {
         linkedStackS.push(1.1);
@@ -29,13 +30,13 @@ public class Exercise2 {
         linkedStackS.push(1.3);
         linkedStackS.push(1.4);
         linkedStackS.push(1.5);
-        linkedStackS.push(1.6);
+        linkedStackS.push(1.6); // top element of stack S
 
         linkedStackT.push(9.51);
         linkedStackT.push(9.52);
         linkedStackT.push(9.53);
         linkedStackT.push(9.54);
-        linkedStackT.push(9.55);
+        linkedStackT.push(9.55); // top element of stack T
         System.out.println("\nItems pushed into stack.");
     }
 
@@ -60,9 +61,11 @@ public class Exercise2 {
     }
 
     public void transferStack() {
+        System.out.println("\nExercise 2.");
+
         pushStack();
         showStack();
-        LinkedStack<Double> stack = new LinkedStack<>();
+        LinkedStack<Double> stack = new LinkedStack<Double>();
         stack.transfer(linkedStackS, linkedStackT);
         showStack();
     }

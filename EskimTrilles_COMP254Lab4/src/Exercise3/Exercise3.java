@@ -28,8 +28,8 @@ public class Exercise3 {
 //        list2.tail = null;
 //    }
 
-    LinkedQueue<Integer> queue1 = new LinkedQueue<>();
-    LinkedQueue<Integer> queue2 = new LinkedQueue<>();
+    LinkedQueue<Integer> queue1 = new LinkedQueue<Integer>();
+    LinkedQueue<Integer> queue2 = new LinkedQueue<Integer>();
 
     private void addQueue() {
         queue1.enqueue(10);
@@ -54,6 +54,8 @@ public class Exercise3 {
     }
 
     public void append2to1() {
+        System.out.println("\nExercise 3.");
+
         addQueue();
         queue1.concatenate(queue2);
 

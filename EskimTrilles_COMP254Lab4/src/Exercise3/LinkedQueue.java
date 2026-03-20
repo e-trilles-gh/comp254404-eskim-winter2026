@@ -33,7 +33,7 @@ package Exercise3;/*
 public class LinkedQueue<E> implements Queue<E> {
 
     /** The primary storage for elements of the queue */
-    private SinglyLinkedList<E> list = new SinglyLinkedList<>();   // an empty  list
+    private SinglyLinkedList<E> list = new SinglyLinkedList<E>();   // an empty  list
 
     /** Constructs an initially empty queue. */
     public LinkedQueue() { }                  // new queue relies on the initially empty list
@@ -91,7 +91,6 @@ public class LinkedQueue<E> implements Queue<E> {
     // question 3
 
     public void concatenate(LinkedQueue<E> Q2) {
-        System.out.println(this.list.first());
         this.list.concatenate(Q2.list);
     }
 }

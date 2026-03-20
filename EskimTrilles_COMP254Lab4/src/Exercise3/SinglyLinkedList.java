@@ -235,7 +235,6 @@ public class SinglyLinkedList<E> implements Cloneable {
     public void concatenate(SinglyLinkedList<E> list2) {
 
         // last node of the 1st list
-        System.out.println(this.tail.getNext());
         Node<E> lastNode = this.tail;
 
         // two ends of the 2nd list - the first and last node
