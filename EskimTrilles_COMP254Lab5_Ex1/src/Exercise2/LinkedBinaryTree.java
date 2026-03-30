@@ -311,7 +311,7 @@ public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
             // height of the children
             for(Position<E> child : children(p)) {
 
-                int childHeight = computeHeight(child);
+                int childHeight = computeHeight(child) ;
 
                 // captures the max height of the children
                 if (maxChildHeight < childHeight) {
@@ -323,7 +323,7 @@ public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
             // maximum height captured from the children
             height = 1 + maxChildHeight;
         }
-        System.out.println(p.getElement());
+        System.out.println("Element: " + p.getElement() + " - Height: " + height);
         return height;
     }
 

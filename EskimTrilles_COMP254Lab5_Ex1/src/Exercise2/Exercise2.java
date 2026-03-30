@@ -57,6 +57,7 @@ public class Exercise2 {
         System.out.println("Exercise 2\n");
         Position<String> p = planetPosition;
 
-        System.out.println("Position : " + p.getElement() + "\nHeight: " + binaryTree.computeHeight(p));
+        System.out.println("\nExercise2 result: ");
+        System.out.println("Element: " + p.getElement() + " - Height: " + binaryTree.computeHeight(p));
     }
 }
