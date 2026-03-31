@@ -1,8 +1,6 @@
 package Exercise1;
 
 public class Exercise1 {
-
-
     /*
     // This method can be found and implemented inside LinkedBinaryTree.java
 
@@ -27,10 +25,7 @@ public class Exercise1 {
             }
         }
     }
-
-
      */
-
 
     LinkedBinaryTree binaryTree = new LinkedBinaryTree();
     Position<String> root = binaryTree.addRoot("Solar System");

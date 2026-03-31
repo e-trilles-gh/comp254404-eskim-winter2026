@@ -6,15 +6,13 @@ import Exercise3.Exercise3;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-
-//        Exercise1 exercise1 = new Exercise1();
-//        exercise1.runExercise1();
+        Exercise1 exercise1 = new Exercise1();
+        exercise1.runExercise1();
 
         Exercise2 exercise2 = new Exercise2();
         exercise2.runExercise2();
 
-//        Exercise3 exercise3 = new Exercise3();
-//        exercise3.runExercise3();
-
+        Exercise3 exercise3 = new Exercise3();
+        exercise3.runExercise3();
     }
 }

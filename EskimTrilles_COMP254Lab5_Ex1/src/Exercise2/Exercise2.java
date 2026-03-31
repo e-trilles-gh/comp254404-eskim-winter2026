@@ -1,9 +1,7 @@
 package Exercise2;
 
 public class Exercise2 {
-
     /*
-
     // This method can be found and implemented inside the LinkedListTree.java
 
     // This method calculates and prints the height of p. the height
@@ -54,10 +52,10 @@ public class Exercise2 {
     Position<String> saturn = binaryTree.addRight(farFromSun, "Saturn");
 
     public void runExercise2() {
-        System.out.println("Exercise 2\n");
+        System.out.println("\n===========================\n\nExercise 2\n");
         Position<String> p = planetPosition;
 
-        System.out.println("\nExercise2 result: ");
+        System.out.println("Exercise2 result: ");
         System.out.println("Element: " + p.getElement() + " - Height: " + binaryTree.computeHeight(p));
     }
 }

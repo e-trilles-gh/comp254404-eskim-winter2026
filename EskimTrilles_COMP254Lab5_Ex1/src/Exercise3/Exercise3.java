@@ -40,11 +40,10 @@ public class Exercise3 {
         priorityQueue.insert(98, "Dates");
         priorityQueue.insert(84, "Kiwi");
         priorityQueue.insert(35, "Pineapple");
-
     }
 
     public void runExercise3() {
-        System.out.println("\nExercise 3\n");
+        System.out.println("\n===========================\n\nExercise 3\n");
 
         insertItems();
         System.out.println("Items inserted.\nSize of Heap: " + priorityQueue.size() + "\n");
