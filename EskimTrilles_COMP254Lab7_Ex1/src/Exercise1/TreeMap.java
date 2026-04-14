@@ -206,7 +206,7 @@ public class TreeMap<K,V> extends AbstractSortedMap<K,V> {
      * @param key  a target key
      * @param p  a position of the tree serving as root of a subtree
      * @return Position holding key, or last node reached during search
-     */
+
     private Position<Entry<K,V>> treeSearch(Position<Entry<K,V>> p, K key) {
         if (isExternal(p))
             return p;                          // key not found; return the final leaf
@@ -217,7 +217,40 @@ public class TreeMap<K,V> extends AbstractSortedMap<K,V> {
             return treeSearch(left(p), key);   // search left subtree
         else
             return treeSearch(right(p), key);  // search right subtree
+    }*/
+
+
+
+
+
+    // non-recursive treeSearch
+    private Position<Entry<K, V>> treeSearch(Position<Entry<K, V>> p, K key) {
+        Position<Entry<K, V>> current = p;
+
+        // continuously search the treemap until the position is found
+        while (!isExternal(current)) {
+            // compares the key with the current position's key element
+            // using the compare method from DefaultComparator.java class
+            int comp = compare(key, current.getElement());
+
+            // updates the current's value after checking its element
+            if (comp == 0) {
+                return current;
+            } else if (comp <0) {
+                current = left(current);
+            } else {
+                current = right(current);
+            }
+        }
+
+        return current;
     }
+
+
+
+
+
+
 
     /**
      * Returns position with the minimal key in the subtree rooted at Position p.

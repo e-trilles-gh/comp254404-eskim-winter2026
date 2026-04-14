@@ -34,9 +34,9 @@ class QuickSort {
         if (n < 2) return;                       // queue is trivially sorted
         // divide
         K pivot = S.first();                     // using first as arbitrary pivot
-        Queue<K> L = new LinkedQueue<>();
-        Queue<K> E = new LinkedQueue<>();
-        Queue<K> G = new LinkedQueue<>();
+        Queue<K> L = new LinkedQueue<K>();
+        Queue<K> E = new LinkedQueue<K>();
+        Queue<K> G = new LinkedQueue<K>();
         while (!S.isEmpty()) {                   // divide original into L, E, and G
             K element = S.dequeue();
             int c = comp.compare(element, pivot);
@@ -97,7 +97,7 @@ class QuickSort {
     }
     public static void main(String[] args)
     {
-        Queue<Integer> S = new LinkedQueue<>();
+        Queue<Integer> S = new LinkedQueue<Integer>();
         S.enqueue(85);
         S.enqueue(24);
         S.enqueue(63);

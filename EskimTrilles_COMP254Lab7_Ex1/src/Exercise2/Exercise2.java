@@ -11,7 +11,11 @@ public class Exercise2 {
 
         createSingleQueue(linkedQueue);
 
+        // merges queues from queueOfQueues while sorting each dequeued queues
         while (queueOfQueues.size() > 1) {
+            // first and second queues' elements are dequeued and saved into a queue,
+            // then passed to a method as a parameter for sorting and merging into
+            // one queue
             LinkedQueue<Integer> queueA = queueOfQueues.dequeue();
             LinkedQueue<Integer> queueB = queueOfQueues.dequeue();
             LinkedQueue<Integer> merged = mergeQueues(queueA, queueB);
@@ -20,11 +24,13 @@ public class Exercise2 {
 
         LinkedQueue<Integer> mergedQueue = queueOfQueues.dequeue();
 
+        System.out.println("mergedQueue created with " + mergedQueue.size() + " sorted elements.");
+
         for (int i = mergedQueue.size(); i > 0 ; i--) {
-            System.out.println(mergedQueue.size() + " <- size; element removed -> " + mergedQueue.dequeue());
+            System.out.println("mergedQueue size: " + (mergedQueue.size() - 1) + " ; element removed: " + mergedQueue.dequeue());
         }
 
-        System.out.println(linkedQueue.size());
+        System.out.println("\nCurrent size of mergedQueue: " + linkedQueue.size());
     }
 
     protected void insertQueue() {
@@ -40,13 +46,20 @@ public class Exercise2 {
 
         size = linkedQueue.size();
 
-        System.out.println("Queue created with " + size + " elements.");
+        System.out.println("Queue created with " + size + " elements.\n");
     }
 
     protected void createSingleQueue(LinkedQueue<Integer> queue) {
+        // dequeue all the elements from queue, and enqueue each element into
+        // individual queue then each individual queue is enqueue into queueOfQueues
         while (!queue.isEmpty()) {
+            // singleQueue will hold the individual element from queue
             LinkedQueue<Integer> singleQueue = new LinkedQueue<Integer>();
+
+            // element from queue is enqueue to the singleQueue
             singleQueue.enqueue(linkedQueue.dequeue());
+
+            // enqueues the singleQueue to the queueOfQueues
             queueOfQueues.enqueue(singleQueue);
         }
     }
@@ -56,7 +69,7 @@ public class Exercise2 {
         LinkedQueue<Integer> mergedQueue = new LinkedQueue<Integer>();
 
         while (!queueA.isEmpty() && !queueB.isEmpty()) {
-
+            // checks the first elements and enqueue the lowest into mergedQueue
             if (queueA.first() <= queueB.first()) {
                 mergedQueue.enqueue(queueA.dequeue());
             } else {
@@ -64,6 +77,8 @@ public class Exercise2 {
             }
         }
 
+        // if one queue is left with one or more elements, then
+        // the remaining elements will be enqueue into the mergedQueue
         while (!queueA.isEmpty()) {
             mergedQueue.enqueue(queueA.dequeue());
         }
@@ -71,6 +86,7 @@ public class Exercise2 {
         while (!queueB.isEmpty()) {
             mergedQueue.enqueue(queueB.dequeue());
         }
+
         return mergedQueue;
     }
 }

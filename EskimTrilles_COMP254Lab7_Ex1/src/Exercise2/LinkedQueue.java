@@ -35,7 +35,7 @@ package Exercise2;
 public class LinkedQueue<E> implements Queue<E> {
 
     /** The primary storage for elements of the queue */
-    private SinglyLinkedList<E> list = new SinglyLinkedList<>();   // an empty  list
+    private SinglyLinkedList<E> list = new SinglyLinkedList<E>();   // an empty  list
 
     /** Constructs an initially empty queue. */
     public LinkedQueue() { }                  // new queue relies on the initially empty list

@@ -1,3 +1,4 @@
+import Exercise1.Exercise1;
 import Exercise2.Exercise2;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -5,10 +6,13 @@ import Exercise2.Exercise2;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("===================\n");
+         Exercise1 exercise1 = new Exercise1();
+         exercise1.runExercise1();
 
-        Exercise2 exercise2 = new Exercise2();
-        exercise2.runExercise2();
+         System.out.println("===================\n");
+
+         Exercise2 exercise2 = new Exercise2();
+         exercise2.runExercise2();
 
     }
 }
