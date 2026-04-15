@@ -9,7 +9,7 @@ public class Main {
          Exercise1 exercise1 = new Exercise1();
          exercise1.runExercise1();
 
-         System.out.println("===================\n");
+         System.out.println("\n===================\n");
 
          Exercise2 exercise2 = new Exercise2();
          exercise2.runExercise2();

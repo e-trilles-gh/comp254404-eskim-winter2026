@@ -95,28 +95,4 @@ class QuickSort {
         quickSortInPlace(S, comp, a, left - 1);
         quickSortInPlace(S, comp, left + 1, b);
     }
-    public static void main(String[] args)
-    {
-        Queue<Integer> S = new LinkedQueue<Integer>();
-        S.enqueue(85);
-        S.enqueue(24);
-        S.enqueue(63);
-        S.enqueue(45);
-        S.enqueue(17);
-        S.enqueue(31);
-        S.enqueue(96);
-        S.enqueue(50);
-
-        //create a Comparator object
-        Comparator<Integer> comp = new Comparator<Integer>() {
-            public int compare(Integer i1, Integer i2) {
-                return i1.compareTo(i2);
-            }
-        };
-
-        quickSort(S, comp);
-        System.out.println(S);
-        //Sort a queue of String objects
-
-    }
 }

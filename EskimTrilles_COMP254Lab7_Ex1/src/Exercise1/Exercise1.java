@@ -32,14 +32,13 @@ public class Exercise1 {
     TreeMap<Integer, String> map = new TreeMap<Integer, String>();
 
     public void runExercise1() {
-        int key = 11;
-
 
         System.out.println("Exercise 1\n");
 
         createMap();
 
-        findKey(key);
+        findKey(11);
+        findKey(19);
 
     }
 
